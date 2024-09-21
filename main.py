@@ -135,10 +135,10 @@ if __name__ == '__main__':
                     final_predictions.append(majority_vote)
 
                 st.markdown(
-                    f'<p style="color:Black;"><b>Model 1 Prediction (Simplified ICF Loss):</b> {engagement_mapping.get(y_pred_lists[0][0], "Unknown")}',
+                    f'<p style="color:Black;"><b>Model 1 Prediction (Simplified ICF - CCE Loss):</b> {engagement_mapping.get(y_pred_lists[0][0], "Unknown")}',
                     unsafe_allow_html=True)
                 st.markdown(
-                    f'<p style="color:Black;"><b>Model 2 Prediction (Standard ICF Loss):</b> {engagement_mapping.get(y_pred_lists[1][0], "Unknown")}',
+                    f'<p style="color:Black;"><b>Model 2 Prediction (Standard ICF - CCE Loss):</b> {engagement_mapping.get(y_pred_lists[1][0], "Unknown")}',
                     unsafe_allow_html=True)
                 st.markdown(
                     f'<p style="color:Black;"><b>Model 3 Prediction (Class Balanced - CCE Loss):</b> {engagement_mapping.get(y_pred_lists[2][0], "Unknown")}',
@@ -147,10 +147,10 @@ if __name__ == '__main__':
                     f'<p style="color:Black;"><b>Model 4 Prediction (Class Balanced - Focal Loss):</b> {engagement_mapping.get(y_pred_lists[3][0], "Unknown")}',
                     unsafe_allow_html=True)
                 st.markdown(
-                    f'<p style="color:Black;"><b>Model 5 Prediction (Non Weighted Loss):</b> {engagement_mapping.get(y_pred_lists[4][0], "Unknown")}',
+                    f'<p style="color:Black;"><b>Model 5 Prediction (Non Weighted CCE Loss):</b> {engagement_mapping.get(y_pred_lists[4][0], "Unknown")}',
                     unsafe_allow_html=True)
                 st.markdown(
-                    f'<p style="color:Black;"><b>Model 6 Prediction (Normalized ICF Loss):</b> {engagement_mapping.get(y_pred_lists[5][0], "Unknown")}',
+                    f'<p style="color:Black;"><b>Model 6 Prediction (Normalized ICF - CCE Loss):</b> {engagement_mapping.get(y_pred_lists[5][0], "Unknown")}',
                     unsafe_allow_html=True)
                 st.markdown(
                     f'<p style="color:Black;"><b>Final Predictions: {engagement_mapping.get(final_predictions[0], "Unknown")}</b>',
